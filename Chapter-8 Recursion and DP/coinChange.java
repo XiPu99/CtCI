@@ -83,7 +83,8 @@ public int change(int amount, int[] coins){
 
 /*
 =====================================================================
-  Bottom-up dynamic programming solution with 1D array
+  Bottom-up dynamic programming solution with 1D array based on the
+  2D array approach
 =====================================================================
 */
 
