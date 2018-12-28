@@ -89,14 +89,15 @@ public int search(int[] nums, int target){
     // determine if nums[mid] and target are on the same sorted half
     // this if statement check if both mid and target are larger or smaller than low
     // NOTE: using < sign here to handle edge cases like ([1,3],1)
-    if((nums[mid]<nums[low])==(target<nums[low])){
+    // Also using nums[0] or nums[low] will not change anything.
+    if((nums[mid]<nums[0])==(target<nums[0])){
       // just use nums[mid] as comparator
       comparator = nums[mid];
     }
     else{
       /* nums[mid] and target are not on the same sorted half
       we need to determine whether to use inf or -inf */
-      if(target<nums[low]&&target<nums[high]){
+      if(target<nums[0]){
         comparator = Integer.MIN_VALUE;
       }
       else{
