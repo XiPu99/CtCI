@@ -1,4 +1,8 @@
 /*
+  LeetCode(https://leetcode.com/problems/factorial-trailing-zeroes/description/)
+*/
+
+/*
   5! = 1*2*3*4*5 = one zero due to 2*5;
   10! = two zeros
   15! = three zeros
